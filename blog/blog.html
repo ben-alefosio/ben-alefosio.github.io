@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <title> BLOG - CSS POSITIONING </title>
+    <style>
+        #class {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size:medium;
+        }
+        h1 {
+            font-family:Arial, Helvetica, sans-serif;
+            color: green;
+        }
+        h2 {
+            font-family:Arial, Helvetica, sans-serif;
+            color: green;
+        }
+
+        body {
+            background-image: url(../styles/burgundy-2.jpg)
+        }
+        .finito {
+            font-size: 45pt;
+            color: goldenrod;
+        }
+    </style>
+    </head>
+
+    <body>
+   <h1> CSS Positioning. What even is it? And that's where you go "iuno" then I say "hmm i think i know"</h1>
+      <p id=class>
+          So CSS positioning is how we move the elements in our HTML files through CSS (Cascading Style Sheets).
+          <br>
+          They way we move them will show how it is displayed in the browser.
+          There are three ways you can do this: Relative, Fixed and Absolute.
+
+          If you think of your element, be it paragraph, or div, or list as a rectangle, 
+          <br>CSS positioning is how you go about moving that rectangle.
+<br>
+          Our elements always start at static positioning and if there is no assigned positioning then it will just stay put the way the browser would originally translate it.
+          If you think of this paragraph even, it is static because no CSS positining has been assigned.
+<br>
+          The other thing to remember is four different directions you can move the element; top, bottom, left and right.
+<br>
+          A positive value in any of those directions moves AWAY by a set value of pixels.<br>
+          For example if you give an element a positioning of top 500px than it will move AWAY from the top by 500 pixels.
+          Negative would be the opposite and move TOWARDS. So if you give an element -200px left then it would go 200 pixels IN THAT DIRECTION.
+<br>
+          What relative, fixed and absolute do is determine what edge you're moving from.
+<br>
+          For relative it's relative to where the element already is currently. It may be in the top corner of the page but you want it to move right.
+<br>
+          You would assign it in CSS a value of Relative positioning, 500px, left as you're going AWAY from the left edge of that element.
+
+<br>      For fixed it's where you're moving it in relation to the viewport or the browser. That same set value of 500px left would move the article 500
+        pixels exactlty away from the leftmost side of the broswer so that the element is now 500 pixels exactly to the right of the browsers edge.
+        Fixed means it will STAY in that position. This also means that it could disrupt the rest of your html as where your rectangle is now
+        is getting in the way of other rectangles. They would take it's place if it's not in the document flow.
+<br>
+        For absolute, the element is moving similarly to fixed EXCEPT it's moving in relation to its parent element.
+        So if the rectangle for example was in another rectangle, moving 500 pixels left is 500 pixels from the left edge of the rectangle it is in.
+        Let's say the rectangle was an image INSIDE of a parent rectangle of text or a paragraph. Absolute positioning helps to move that image somewhere
+        within the text somewhere you may find most ideal.
+
+    </p>
+
+    </body>
+<div class="finito">
+    <p> Thanks for reading my rough edit of CSS Positioning. Stay tuned for more enlightenment
+    <a href="../index.html"> Go back to where you once belonged </a> </p>
+</div>
+</html>
+
