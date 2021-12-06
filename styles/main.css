@@ -24,6 +24,9 @@
 
 body {
     background-image: url(../styles/burgundy.jpg);
+    background-repeat: no=repeat;
+    background-attachment: local;
+    background-size: cover;
 }
 
 
